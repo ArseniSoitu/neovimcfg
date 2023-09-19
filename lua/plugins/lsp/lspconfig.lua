@@ -157,5 +157,11 @@ return {
         },
       },
     })
+
+    -- configure css server
+    lspconfig["clangd"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
   end,
 }
